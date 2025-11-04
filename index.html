@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Red-Brick Psalm: Saint Matthias Parish Church</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for the brick color theme and Inter font */
+        :root {
+            --color-brick: #b33939; /* Deep Red/Terracotta */
+            --color-cream: #f7f3e8; /* Off-White */
+            --color-dark: #333333;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-cream);
+            color: var(--color-dark);
+        }
+        /* Custom utility for the main brick color */
+        .bg-brick { background-color: var(--color-brick); }
+        .text-brick { color: var(--color-brick); }
+
+        /* Smooth scroll for navigation */
+        html { scroll-behavior: smooth; }
+
+        /* Image fallbacks and loading */
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: auto;
+        }
+
+        /* Responsive table styling */
+        .responsive-table th, .responsive-table td {
+            text-align: left;
+            padding: 12px 16px;
+            border-bottom: 1px solid #d1d5db;
+        }
+        .responsive-table th {
+            background-color: #f3f4f6;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header/Navigation Bar -->
+    <header class="bg-brick shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3 flex justify-between items-center">
+            <h1 class="text-xl font-extrabold text-white tracking-wider">TUMAUINI CHURCH</h1>
+            <nav class="hidden md:flex space-x-6">
+                <a href="#overview" class="text-white hover:text-gray-200 transition duration-300 font-medium">Overview</a>
+                <a href="#history" class="text-white hover:text-gray-200 transition duration-300 font-medium">History</a>
+                <a href="#architecture" class="text-white hover:text-gray-200 transition duration-300 font-medium">Architecture</a>
+                <a href="#gallery" class="text-white hover:text-gray-200 transition duration-300 font-medium">Gallery</a>
+                <a href="#info" class="text-white hover:text-gray-200 transition duration-300 font-medium">Visit</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-[80vh] md:h-[90vh] flex items-end justify-center overflow-hidden">
+        <!-- Main Image -->
+        <img src="full_exterior.jpg"
+             onerror="this.onerror=null; this.src='https://placehold.co/1920x1080/b33939/ffffff?text=Saint+Matthias+Church+Image'"
+             alt="Saint Matthias Parish Church, full exterior view with bell tower"
+             class="absolute inset-0 w-full h-full object-cover brightness-[.6]">
+
+        <!-- Overlay Text -->
+        <div class="relative z-10 text-center p-8 mb-16 max-w-4xl bg-black bg-opacity-40 rounded-xl shadow-2xl backdrop-blur-sm mx-4">
+            <h2 class="text-4xl sm:text-6xl font-extrabold text-white mb-3 tracking-tight">The Red-Brick Psalm</h2>
+            <p class="text-xl sm:text-3xl font-light text-gray-100">Saint Matthias Parish Church, Tumauini, Isabela</p>
+        </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <main class="max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+
+        <!-- Overview Section -->
+        <section id="overview" class="mb-16">
+            <h3 class="text-4xl font-bold mb-6 text-brick border-b-4 border-brick pb-2"> A National Cultural Treasure</h3>
+            <div class="bg-white p-6 md:p-10 rounded-xl shadow-lg border-t-8 border-brick">
+                <p class="text-lg leading-relaxed">Located proudly in the town plaza of <span class="font-semibold text-brick">Tumauini, Isabela</span>, the <span class="font-semibold text-brick">Saint Matthias Parish Church</span> is one of the Philippines' most unique and celebrated Spanish-era churches. It is instantly recognizable for two distinguishing features: its <span class="font-semibold text-brick">all-brick construction</span> and its rare <span class="font-semibold text-brick">cylindrical bell tower</span>.</p>
+                <p class="mt-4 text-lg leading-relaxed">This church stands not just as a landmark, but as a lasting symbol of enduring faith, local artistry, and colonial heritage in the Cagayan Valley region.</p>
+            </div>
+        </section>
+
+        <!-- History Section -->
+        <section id="history" class="mb-16">
+            <h3 class="text-4xl font-bold mb-6 text-brick border-b-4 border-brick pb-2"> History: Built to Last</h3>
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <table class="w-full responsive-table">
+                    <thead>
+                        <tr>
+                            <th class="w-1/3">Date / Status</th>
+                            <th>Detail</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1707</td>
+                            <td>Originally built from light, perishable materials by Dominican friar Francisco Núñez.</td>
+                        </tr>
+                        <tr>
+                            <td>1783–1805</td>
+                            <td>Construction on the current, permanent brick structure was started by Fr. Domingo Forto and completed around 1805. It was built with assistance from Pampanga artisans.</td>
+                        </tr>
+                        <tr>
+                            <td>World War II</td>
+                            <td>The structure was unfortunately damaged during the war, but was later restored with careful conservation efforts.</td>
+                        </tr>
+                        <tr>
+                            <td>1989 & Present</td>
+                            <td>Declared a <span class="font-semibold text-brick">National Historical Landmark</span> by the National Historical Institute (NHI) and later recognized as a <span class="font-semibold text-brick">National Cultural Treasure</span> by the National Museum of the Philippines.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Architecture Section -->
+        <section id="architecture" class="mb-16">
+            <h3 class="text-4xl font-bold mb-6 text-brick border-b-4 border-brick pb-2"> Architectural Highlights: Brick Baroque Masterpiece</h3>
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Highlight 1: All-Brick Design -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <p class="text-2xl font-semibold text-brick mb-2"> All-Brick Design</p>
+                    <p class="text-gray-700">This is its most defining feature. The church is built almost entirely of baked red bricks—<span class="font-semibold">a rare and striking material choice</span> among Philippine colonial churches, which more often used stone or coral.</p>
+                </div>
+                <!-- Highlight 2: Detailed Ornamentation -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <p class="text-2xl font-semibold text-brick mb-2"> Detailed Ornamentation</p>
+                    <p class="text-gray-700">The façade is a tapestry of intricate brick carvings. Look closely to find delicate motifs of <span class="font-semibold">flowers, cherubs, and religious patterns</span> decorating the entrance and wall surfaces.</p>
+                </div>
+                <!-- Highlight 3: Cylindrical Bell Tower -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <p class="text-2xl font-semibold text-brick mb-2"> The Cylindrical Bell Tower</p>
+                    <p class="text-gray-700">Standing separate from the main church, the belfry is the <span class="font-semibold">only known circular bell tower</span> from the Spanish colonial era in the country. Its tiered design gives it a unique, stacked appearance, often likened to a wedding cake.</p>
+                </div>
+                <!-- Highlight 4: Interior Ambiance -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <p class="text-2xl font-semibold text-brick mb-2"> Interior Ambiance</p>
+                    <p class="text-gray-700">Inside, the warm light streaming through the arched windows, combined with the aged wooden pews and the echoes of history, creates a peaceful and deeply spiritual atmosphere.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image Gallery/Reflection Section -->
+        <section id="gallery" class="mb-16">
+            <h3 class="text-4xl font-bold mb-6 text-brick border-b-4 border-brick pb-2"> Photo Gallery</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Image 2: Facade & Bell Tower Close-up (Sunset) -->
+                <div class="rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition duration-500">
+                    <img src="facade_sunset.jpg"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x400/b33939/ffffff?text=Sunset+Facade'"
+                         alt="Close-up of the red-brick facade and cylindrical bell tower bathed in the warm light of sunset." class="h-64">
+                </div>
+                <!-- Image 3: Interior Sunlight -->
+                <div class="rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition duration-500">
+                    <img src="interior_sunlight.jpg"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x400/b33939/ffffff?text=Church+Interior'"
+                         alt="Interior view of the church showing the long aisle, wooden pews, and sunlight streaming through the arched brick windows." class="h-64">
+                </div>
+                <!-- Image 4: Exterior Reflection -->
+                <div class="rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition duration-500">
+                    <img src="exterior_reflection.jpg"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x400/b33939/ffffff?text=Exterior+Reflection'"
+                         alt="The brick church and bell tower reflected perfectly in a large puddle." class="h-64">
+                </div>
+                 <!-- Image 1: Full Exterior (Again, for visual grouping) -->
+                <div class="rounded-xl overflow-hidden shadow-lg transform hover:scale-[1.02] transition duration-500">
+                    <img src="full_exterior.jpg"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x400/b33939/ffffff?text=Church+Exterior'"
+                         alt="Saint Matthias Parish Church, full exterior view with bell tower and surrounding trees." class="h-64">
+                </div>
+            </div>
+
+            <div class="mt-10 p-8 bg-brick text-white rounded-xl shadow-xl">
+                <p class="text-2xl font-semibold mb-3"> Experience & Essence</p>
+                <p class="text-lg leading-relaxed">Walking through the Tumauini Church feels genuinely like traveling through time. You can trace the hand of the 18th-century craftsmen in the detailed brickwork and feel the weight of centuries of worship. It beautifully reflects both the <span class="font-bold">endurance of faith</span> in the region and the <span class="font-bold">artistry of local builders</span> guided by Dominican friars.</p>
+                <p class="mt-4 text-xl font-bold">Saint Matthias Parish Church is not just a historic landmark—it’s a <span class="font-bold">masterpiece of brick-baroque architecture</span> and a profound testament to enduring devotion.</p>
+            </div>
+        </section>
+
+        <!-- Travel Info Section -->
+        <section id="info" class="mb-16">
+            <h3 class="text-4xl font-bold mb-6 text-brick border-b-4 border-brick pb-2"> Plan Your Visit</h3>
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                <ul class="divide-y divide-gray-200">
+                    <li class="p-4 flex items-start space-x-4">
+                        <span class="text-3xl text-brick"></span>
+                        <div>
+                            <p class="font-bold text-xl">Location</p>
+                            <p>Town Plaza, Tumauini, Isabela</p>
+                            <a href="https://maps.app.goo.gl/LF6EFj4jBcXcokrw9" target="_blank" class="text-blue-600 hover:underline">View on Google Maps</a>
+                        </div>
+                    </li>
+                    <li class="p-4 flex items-start space-x-4">
+                        <span class="text-3xl text-brick"></span>
+                        <div>
+                            <p class="font-bold text-xl">What to See</p>
+                            <p>The intricate brickwork on the front exterior, the unique cylindrical bell tower, and the nearby convent ruins.</p>
+                        </div>
+                    </li>
+                    <li class="p-4 flex items-start space-x-4">
+                        <span class="text-3xl text-brick"></span>
+                        <div>
+                            <p class="font-bold text-xl">Best Time to Visit</p>
+                            <p>Consider visiting during parish feasts or local festivals for a livelier cultural atmosphere.</p>
+                        </div>
+                    </li>
+                    <li class="p-4 flex items-start space-x-4 bg-gray-50 rounded-b-xl">
+                        <span class="text-3xl text-brick"></span>
+                        <div>
+                            <p class="font-bold text-xl">Pro Tip</p>
+                            <p>Take your time. This church rewards a slow and thoughtful look; every detail in the brick façade tells a story.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-brick py-8 mt-12">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-white text-sm">&copy; 2025 Heritage Travel Blog. All Rights Reserved. | Saint Matthias Parish Church.</p>
+            <p class="text-white text-sm">&copy; BERNADETH L. MANUEL ECE-2</p>
+        </div>
+    </footer>
+</body>
+</html>
